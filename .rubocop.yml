@@ -17,11 +17,14 @@ Lint/UselessAssignment:
   Exclude:
     - '**/spec/**/*'
 
-# We could potentially enable the 2 below:
+# We could potentially enable the 3 below:
 Layout/FirstHashElementIndentation:
   Enabled: false
 
 Layout/HashAlignment:
+  Enabled: false
+
+Layout/EndOfLine:
   Enabled: false
 
 # HoundCI doesn't like this rule

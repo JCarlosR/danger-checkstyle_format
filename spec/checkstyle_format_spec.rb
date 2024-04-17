@@ -29,7 +29,7 @@ module Danger
 
       describe ".parse" do
         subject(:errors) do
-          @checkstyle_format.base_path = "/path/to"
+          @checkstyle_format.base_regex = %r{^.*?/to/}
           @checkstyle_format.send(:parse, File.read("spec/fixtures/checkstyle.xml"))
         end
         it "have 4 items" do

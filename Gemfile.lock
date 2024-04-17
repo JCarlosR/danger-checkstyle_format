@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    danger-checkstyle_xml (0.0.1)
+    danger-checkstyle_xml (0.0.5)
       danger-plugin-api (~> 1.0)
       ox (~> 2.14)
 
