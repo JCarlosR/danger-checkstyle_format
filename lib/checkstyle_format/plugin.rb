@@ -53,11 +53,15 @@ module Danger
       require "ox"
 
       doc = Ox.parse(text)
+
       present_elements = doc.nodes.first.nodes.reject do |test|
         test.nodes.empty?
       end
+      
       base_path_suffix = @base_path.end_with?("/") ? "" : "/"
+      
       base_path = @base_path + base_path_suffix
+
       present_elements.flat_map do |parent|
         parent.nodes.map do |child|
           CheckstyleError.generate(child, parent, base_path)
@@ -75,6 +79,7 @@ module Danger
 
     def send_inline_comment(errors)
       errors.each do |error|
+        puts "Sending inline comment to file #{error.file_name}, line #{error.line}"
         warn(error.message, file: error.file_name, line: error.line)
       end
     end

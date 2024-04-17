@@ -7,3 +7,7 @@ pkg
 /.bundle/
 /vendor/bundle
 /lib/bundler/man/
+
+
+## Built gems existing locally:
+*.gem
