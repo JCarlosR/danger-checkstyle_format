@@ -4,13 +4,13 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'checkstyle_format/gem_version.rb'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'danger-checkstyle_format'
+  spec.name          = 'danger-checkstyle_xml'
   spec.version       = CheckstyleFormat::VERSION
-  spec.authors       = ['noboru-i']
-  spec.email         = ['ishikura.noboru@gmail.com']
+  spec.authors       = ['noboru-i', 'JCarlosR']
+  spec.email         = ['juancagb.17@gmail.com']
   spec.description   = %q{Danger plugin for checkstyle formatted xml file.}
   spec.summary       = %q{Danger plugin for checkstyle formatted xml file.}
-  spec.homepage      = 'https://github.com/noboru-i/danger-checkstyle_format'
+  spec.homepage      = 'https://github.com/JCarlosR/danger-checkstyle_format'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files`.split($/)
@@ -22,7 +22,7 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency 'ox', '~> 2.0'
 
   # General ruby development
-  spec.add_development_dependency 'bundler', '~> 1.3'
+  spec.add_development_dependency 'bundler', '~> 2.4'
   spec.add_development_dependency 'rake', '~> 10.0'
 
   # Testing support

@@ -1,7 +1,7 @@
 require_relative "checkstyle_error"
 
 module Danger
-  # Danger plugin for checkstyle formatted xml file.
+  # Danger plugin for checkstyle xml files.
   #
   # @example Parse the XML file, and let the plugin do your reporting
   #
